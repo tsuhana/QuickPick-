@@ -1,0 +1,367 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    
+    --outline:.1rem solid rgba(0,0,0.1);
+    --light:#666;
+    --green:green;
+    --black:black;
+    --border:1rem solid rgba(0,0,0.1);
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+  /*  background: rgb(179, 176, 176);*/
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.navbar a::before{
+ content: '';
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 0;
+ height: 2px;
+background: #fff;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+    
+}
+
+/* Style for the login popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+.popup input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.popup button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.heading{
+    text-align: center;
+    padding: 1rem 0;
+    padding-bottom: 1.8rem;
+    font-size: 2.7rem;
+    color: var(--black);
+}
+
+.heading span{
+    background: var(--green);
+    color: white;
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    
+}
+
+.btn{
+border: .1rem solid var(--black);
+margin-top: .8rem;
+display: inline-block;
+padding: .5rem 1.8rem;
+font-size: 1.1rem;
+border-radius: .2rem;
+color: var(--black);
+cursor: pointer;
+background: none;
+
+
+}
+
+.btn:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/*Banner*/
+
+
+.home{
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    background: url(/images/banner.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.home .content{
+    border: 0px solid;
+    text-align: center;
+    width: 45rem;
+
+}
+
+.home .content h3{
+    color: var(--black);
+    font-size: 1.9rem;
+}
+.home .content h3 span{
+    color: var(--green);
+}
+
+.home .content p{
+    font-size: 1.3rem;
+    padding: .7rem , 0;
+    line-height: 1.5;
+}
+/*Banner*/
+
+
+.home{
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    background: url(../images/banner.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.home .content{
+    border: 0px solid;
+    text-align: center;
+    width: 45rem;
+
+}
+
+.home .content h3{
+    color: var(--black);
+    font-size: 1.9rem;
+}
+.home .content h3 span{
+    color: var(--green);
+}
+
+.home .content p{
+    font-size: 1.3rem;
+    padding: .7rem , 0;
+    line-height: 1.5;
+}
+/* Category*/
+.products .box-container{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    border: 0px red solid;
+    padding: 1.3rem .7rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.products .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.products .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+.products .box-container .box h3{
+    font-size: 2rem;
+    line-height: 1.4;
+    
+    color: var(--black);
+}
+
+.products .box-container .box p{
+font-size: 1.3rem;
+line-height: 1.8;
+color: var(--light);
+padding-bottom: 1rem 0;
+
+}
+
+/* Product card  */
+
+.prod .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+.prod .container .product-card:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+.prod .container .product-card{
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+.prod {
+    margin-bottom: 50px; /* Adjust the value as needed */
+    min-height: 500px; /* Adjust the value as needed */
+}
+
+footer {
+    padding-bottom: 50px; /* Adjust the value as needed */
+}
+
+/*  Footer    */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    padding: 60px 10%;
+    
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #f1bc0d;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: seagreen;
+    height: 2px;
+    width: 40px;
+}
+
+ul li::not(:last-child){
+    margin-bottom: 8px;
+}
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.4s;
+    color: #bdb6b6;
+}
+
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+}
