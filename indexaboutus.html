@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="/css/index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--use of internal CSS styles-->
+    <style>
+
+.navbar {
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+        }
+
+        .footer-col {
+            flex: 1; /* Make footer columns equal width */
+        }
+        
+        .Info{
+            display: flex;
+            justify-content:space-around;
+            background-color: beige;
+            height: 200px;
+            margin-bottom: 30px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        .left box{
+            flex: 60%;
+        }
+        .right box{
+            flex: 40%;
+        }
+        .container{
+            display: flex;
+            justify-content:space-around;
+            background-color: beige;
+            box-shadow: 5px 5px 10px beige;
+            max-width: 900px;
+            margin:0 auto;
+            border: 1px solid silver ;
+            padding: 40px;
+                
+        }
+        .left column,Right.column{
+            flex: 50%;
+            padding: 20px;
+            margin: 10px;     
+        }
+        .image-txt-card{
+            margin: 10px;
+            text-align:center;
+        }
+        .image-txt-card img{
+            width: 150px;
+            height:150px; 
+            border-radius: 50%;
+            border: 2px solid silver;
+        }
+        .image-txt-card p{
+            color:rgb(103, 103, 196);
+        }
+        .feedback{
+            display: flex;
+        }
+        .box3{
+            width:fit-content;
+            background-color: beige;
+        }
+    </style>
+       
+</head>
+<!-- ...main body part... -->
+
+<body>
+     <!--Header section-->
+    
+    <header class="header">
+
+        <a href="#" class="logo">QuickPick</a>
+
+        <nav class="navbar">
+           
+            <a href="/pages/index4.html">Home</a>
+            <a href="/pages/indexproduct.html">Product</a>
+            <a href="/pages/indexBlog.html">Blog</a>
+            <a href="/pages/indexaboutus.html">About us</a>
+            <a href="/pages/indexresearch.html">Research</a>
+
+
+
+
+        </nav>
+    </header>
+
+    <!--Header section-->
+
+
+
+    <!--this is the main outer division and also inline css is used to set bg colour-->
+<div style="background-color:rgb(220, 231, 220)">
+    <!--This is the header part for giving main heading to the page-->
+    <header>
+        <h1 style="text-align: center; color:black;"><b><i><u>"ABOUT US"</u></i></b></h1>
+    </header>
+    <!--This is small div inside main div which is further divided into two classes left and right box-->
+    <div class="Info">
+        <div class="left box">
+            <h2 style="text-align: left;"><b><u><i>"Our Main Vision and Objectives"</i></u></b></h2><br>
+            <br><p><i>At QuickPick, you will get to explore and experience variety of grocery items and services.
+             This website is an outcome of proper team work, hardwork and dedication of the team members.We teamed
+             up with a vision to furnish our customers with fresh ,quality and affordable groceries and marvellous 
+             shopping experience. We are highly committed to our customers and enthusiast to support them considering
+             it as our duty.
+         <p>We look forward to creating lasting relationship with our customers and becoming
+             your go-to grocery destination website. Get in touch with us to learn more about our offerings.
+         </p>
+              </i></p>
+        </div>
+        <div class="right box">
+                <img style="height: 150px;width: 150px; border-radius: 100%;" src="/images/team image.jpg" alt="picture">
+        </div>
+    </div>
+    <h2 style="text-align: center;background-color:beige;color: rgb(38, 63, 190);"><b>"Meet Our Team Members"</b></h2><br>
+    <!--this is division class container for the portfolios which is further divided into small
+    divisions using Flex box -->
+    <div class="container">
+        <div class="Left column">
+            <div class="image-txt-card">
+                <img src="/images/swikriti.jpg" alt="image 1">
+                <h3>Swikriti Bhusal</h3>
+                <p><b>Team Leader</b><br>
+                   <br><a href="Resume1.html"><b>Member details</b></a><!--using anchor tag to add the link of resume-->
+                </p>
+                <!--this div is for adding the clickable social media icons using anchor tags-->
+                <div class="icons">
+                    <a href="https://www.planeta.com/facebook-links/"><img style="height: 25px; width: 25px;"  src="/images/633_facebook_icon.jpg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/accounts/edit/"><img style="height: 25px; width: 25px;" src="/images/instagram logo.jpg" alt="instagram"></a>
+                    <a href="https://web.whatsapp.com/"><img style="height: 25px; width: 25px;"  src="/images/whatsapplogo.jpg" alt="whatsapp"></a>
+                </div>  
+            </div>
+            <div class="image-txt-card">
+                <img src="/images/siddhant.jpg" alt="image 2">
+                <h3>Siddhant Sharma</h3>
+                <p><b>Team member</b><br>
+                    <br><a href="Resume3.html"><b>Member details</b></a>
+                </p>
+                <div class="icons">
+                    <a href="https://www.planeta.com/facebook-links/"><img style="height: 25px; width: 25px;"  src="/images/633_facebook_icon.jpg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/accounts/edit/"><img style="height: 25px; width: 25px;" src="/images/instagram logo.jpg" alt="instagram"></a>
+                    <a href="https://web.whatsapp.com/"><img style="height: 25px; width: 25px;"  src="/images/whatsapplogo.jpg" alt="whatsapp"></a>
+                </div>  
+            </div>
+        </div>
+        <div class="Right column">
+            <div class="image-txt-card">
+                <img src="/images/suhana.jpg" alt="image 3">
+                <h3>Suhana Thapa</h3>
+                <p><b>Team member</b><br>
+                    <br><a href="Resume2.html"><b>Member details</b></a>
+                </p>
+                <div class="icons">
+                    <a href="https://www.planeta.com/facebook-links/"><img style="height: 25px; width: 25px;"  src="/images/633_facebook_icon.jpg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/accounts/edit/"><img style="height: 25px; width: 25px;" src="/images/instagram logo.jpg" alt="instagram"></a>
+                    <a href="https://web.whatsapp.com/"><img style="height: 25px; width: 25px;"  src="/images/whatsapplogo.jpg" alt="whatsapp"></a>
+                </div>  
+            </div>
+            <div class="image-txt-card">
+                <img src="/images/komalDP.jpg" alt="image 4">
+                <h3>komal Bidari</h3>
+                <p><b>Team member</b><br>
+                    <br><a href="Resume4.html"><b>Member details</b></a>
+                </p>
+                <div class="icons">
+                    <a href="https://www.planeta.com/facebook-links/"><img style="height: 25px; width: 25px;"  src="/images/633_facebook_icon.jpg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/accounts/edit/"><img style="height: 25px; width: 25px;" src="/images/instagram logo.jpg" alt="instagram"></a>
+                    <a href="https://web.whatsapp.com/"><img style="height: 25px; width: 25px;"  src="/images/whatsapplogo.jpg" alt="whatsapp"></a>
+                </div>  
+            </div>
+        </div>
+    </div><br>
+    <br><h3 style="color: rgb(27, 66, 157);text-align: center;"><b><i>We strive to enhance your shopping experience with each visit to our website!!!</i></b></h3><br>
+    <div class="feedback"><!--small division for the feedback section-->
+        <div class="box3">
+      <p style="text-align:justify;"><b>Please take a moment to fill out this form to help us know about your overall shopping experience 
+        on our website. Also, to let us know about our shortcomings so that we can improve and make your shopping
+        experience better.</b></p>
+        <p><b>Kindly click on the link below to fillup the feedback form!</b></p>
+        <a  href="feedbackform.html" ><b>Feedback Form Here!</b></a><!--using anchor tag to add the link of feedback form-->
+      </div>
+    </div>
+</div>
+
+
+
+ <!--Footer-->
+
+
+
+ <footer>
+    <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+            <li><a href="#">Fruit</a></li>
+            <li><a href="#">Veggies</a></li>
+            <li><a href="#">Dairy product</a></li>
+            <li><a href="#">Snacks</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

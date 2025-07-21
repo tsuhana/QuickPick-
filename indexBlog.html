@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <!-- Use of Internal CSS Styles -->
+
+    <link rel="stylesheet" href="/css/index2.css">
+    <style>
+        
+.navbar {
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+        }
+
+        .footer-col {
+            flex: 1; /* Make footer columns equal width */
+        }
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+            background-color: rgb(220, 231, 220); 
+        }
+        /* Use of Flexbox for columns */
+        .column {
+            display: flex;
+            align-items: stretch;
+        }
+        /* Use of different styles in columns */
+        .leftcolumn{
+            flex: 1; 
+            padding: 10px;
+            background-color: rgb(208, 203, 203);
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .rightcolumn{
+            flex: 1; 
+            padding: 10px;
+            background-color: rgb(208, 203, 203);
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        } 
+        .midcolumn {
+            flex: 1; 
+            padding: 10px;
+            background-color: rgb(208, 203, 203);
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        /* Use of Flexbox for rows */
+        .row1{
+            display: flex;
+            gap: 10px;
+        }
+        .row2 {
+            display: flex;
+            gap: 10px;
+        }
+        /* Use of different styles in rows */
+        .toprow{
+            background-color: rgb(208, 203, 203); 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .bottomrow {
+            background-color: rgb(208, 203, 203);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+        .description {
+            display: none; /* Hiding description initially */
+            padding-bottom: 5px;
+        }
+        .read-more-button {
+            margin-top: 10px;
+        }
+        img {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<!-- Section of Header -->
+<body>
+    <!--Header section-->
+    
+    <header class="header">
+
+        <a href="#" class="logo">QuickPick</a>
+
+        <nav class="navbar">
+           
+            <a href="/pages/index4.html">Home</a>
+            <a href="/pages/indexproduct.html">Product</a>
+            <a href="/pages/indexBlog.html">Blog</a>
+            <a href="/pages/indexaboutus.html">About us</a>
+            <a href="/pages/indexresearch.html">Research</a>
+
+
+
+
+
+
+
+
+        </nav>
+    </header>
+
+    <!--Header section-->
+
+
+
+
+<div style="background-color: beige"> 
+    <h1 align="center">WELCOME TO OUR BLOG PAGE!!!</h1> 
+</div>
+<!-- Section of TopRow -->
+<div class="toprow">
+    <!-- Content and Image Container -->
+    <div style="display: flex; align-items: center;">
+        <!-- Text Content -->
+        <div style="flex: 1;">
+            <!-- Heading for about technology section -->
+            <h2>About Technology</h2>
+            <!-- Paragraph for about technology section -->
+            <p>Technology is the usage and application of scientific, and conceptual knowledge for achieving the practical goals and aims of human life. In this age and time technology plays a significant role in all areas of our life; from the devices that we use, the applications, web technologies, internet are all examples of technologies which have been an integral part of our daily life recently. Its advancement is becoming more rapid with each passing day and the world is becoming digital. From being able to pay the educational fees from home, to being able to shop groceries, clothes and even tickets of movies, international flights it is all possible due to technology and its advancement even in the field of e-commerce and digital websites and applications.</p>
+        </div>
+        <!-- Image for about technology section -->
+        <img src="/images/About technology.jpg" alt="About Technology" width="50%" height="auto">
+    </div>
+    <!-- Hidden Description for about technology section -->
+    <div class="description">Technology is like a magic wand we wave to make everyday tasks simpler. It is the wizardry in our smartphones, the enchantment in our laptops, and the fairy dust that turns imagination into reality. With technology, we zoom through distances in a click, talk to friends and family across seas and oceans like they are next door, and unlock doors with just a glance. It is the modern-day spellbook, full of endless possibilities waiting for us to discover and explore.</div>
+    <!-- Read More Button -->
+    <button onclick="toggleDescription(this)">Read More</button>
+</div>
+<!-- Body/content of column -->
+<div class="column">
+    <!-- Section of left column -->
+    <div class="leftcolumn">
+        <h2>Positive Impacts</h2>
+        <img src="/images/Positive Impacts.jpg" alt="Positive Impacts" width="100%" height="auto">
+        <p>Imagine a world without technology where there is no electricity to light up our homes, no internet to light up our phones, no proper and vast educational or health care facilities. It's like living from a completely digital age to reaching the ancient age of stones. Would you like to even imagine it? I guess not! Let alone to experience it in real life. This is just a small example among many, to show how much technology has impacted us in a positive way so as to bring much comfort into our lives.</p>
+        <div class="description">Technology has had a positive impact on the advancement of e-commerce websites too. E-commerce platforms have transformed the shopping experience, providing unparalleled convenience and accessibility. With a simple click, shoppers can explore extensive product selections from home, saving time and enjoying personalized recommendations tailored to their preferences. This digital marketplace not only benefits consumers but also offers a global platform for small and medium businesses, promoting entrepreneurship and driving economic expansion.</div>
+        <button onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <!-- Section of mid column -->
+    <div class="midcolumn">
+        <h2>Negative Impacts</h2>
+        <img src="/images/Negative Impacts.jpg" alt="Negative Impacts" width="100%" height="auto">
+        <p>When was the last time you played with your friends not virtually through smartphones, but in person? When exactly was the last time you left your phone at home and went out on a walk? Technology may have its positive impacts but every positive comes with its negative. Social media is indeed a fabulous platform for us, to communicate with friends, for information on various things and for entertainment purposes too. But it is definitely separating us from the real world and have you ever checked how messed up your screen time is due to it?</p>
+        <div class="description">Talking about the negative impacts, misinformation on social media is definitely one of them. Lack of security of data, cyberbullying has been causing a huge disruption in the mental health of young adults. Hence, if misused technology can be a curse to humankind.</div>
+        <button onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <!-- Section of right column -->
+    <div class="rightcolumn">
+        <h2>Role of Technology in Business, and Daily Life</h2>
+        <img src="/images/Daily life Business and Technology.jpg" alt="Daily Life Business and Technology" width="100%" height="auto">
+        <p>Technology helps businesses work smarter, using tools like AI and blockchain to find new ways to grow and succeed. Technology is everywhere in our daily routines, from homes that adjust to our needs to gadgets that track our health, making life simpler and more connected every step of the way.</p>
+        <div class="description">Technology serves as the engine driving business evolution, propelling organizations forward with innovations like cloud computing and data analytics. It’s not just about survival; it’s about thriving in a dynamic marketplace. By harnessing technology, businesses unlock new pathways to efficiency, agility, and customer-centered, shaping the future of commerce.</div>
+        <button onclick="toggleDescription(this)">Read More</button>
+    </div>
+</div>
+<!-- Section of Bottom Row -->
+<div class="bottomrow">
+    <!-- Content and Image Container -->
+    <div style="display: flex; align-items: center;">
+        <!-- Text Content -->
+        <div style="flex: 1;">
+            <!-- Heading for Conclusion section -->
+            <h2>Overall Conclusion</h2>
+            <!-- Paragraph for Conclusion section -->
+            <p>In conclusion, technology stands as the cornerstone of modern society, shaping every aspect of our lives from communication to commerce. Its rapid advancement has ushered in an era of unparalleled convenience and connectivity, revolutionizing how we interact with the world around us. However, alongside its myriad benefits, technology also presents challenges such as misinformation and privacy concerns, highlighting the need for responsible usage and ethical considerations.</p>
+        </div>
+        <!-- Image for Conclusion section -->
+        <img src="/images/Overall Conclusion.jpg" alt="Conclusion" width="50%" height="auto">
+    </div>
+    <!-- Hidden Description for Conclusion section -->
+    <div class="description">Nevertheless, the positive impacts of technology far outweigh the negatives, empowering businesses to innovate and individuals to thrive in an increasingly digital world. As we navigate this ever-changing landscape, it's essential to harness the potential of technology responsibly, ensuring that it continues to serve as a catalyst for progress and prosperity in the years to come.</div>
+    <!-- Read More Button -->
+    <button onclick="toggleDescription(this)">Read More</button>
+</div>
+
+
+    <!--Footer-->
+
+
+
+    <footer>
+        <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+                <li><a href="#">Fruit</a></li>
+                <li><a href="#">Veggies</a></li>
+                <li><a href="#">Dairy product</a></li>
+                <li><a href="#">Snacks</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- JavaScript Function for Toggling Description/Use of Read More and Read Less -->
+<script>
+    function toggleDescription(button) {
+        var description = button.previousElementSibling;
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+            button.textContent = "Read Less";
+        } else {
+            description.style.display = "none";
+            button.textContent = "Read More";
+        }
+    }
+</script>
+</body>
+</html>

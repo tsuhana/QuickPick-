@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK FORM</title>
+    <style>
+        .container {
+            background-color: #d6d9d962;
+            text-align: center;
+        }
+        
+        .Personal-info {
+            background-color: rgb(205, 207, 201);
+            text-align: left;
+        }
+        
+        .queries {
+            background-color: rgb(235, 238, 225);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main div class container of the feedback form -->
+    <div class="container">
+        <header>
+            <h3><b>THIS IS YOUR FEEDBACK FORM!!</b></h3>
+        </header>  
+        <h3 style="color: rgb(51, 51, 223);"><i>"We value our customers and strive to fulfill their needs!"</i></h3>
+        <h5 style="color: rgb(52, 52, 229);"><b><i>YOUR FEEDBACK MATTERS,</i></b></h5>
+        <br>
+        <!-- Div for the personal info of the form -->
+        <div class="Personal-info">
+            <h3><b><u>Personal Info:</u></b></h3>
+            <form action="" name="feedbackForm" onsubmit="validateForm()">
+                <b>Full Name:</b>
+                <input type="text" name="full name" placeholder="User name"><br>
+                <br> <b>Phone Number: </b>
+                <input type="number" name="phone number" placeholder="Number"><br>
+                <br><b>Email Address:</b>
+                <input type="email" name="email address" placeholder="name@domain.com"><br>
+                <br><b>Gender:</b><br>
+                <input type="radio" value="Male" name="gender">Male<!--using radio buttons-->
+                <input type="radio" value="Female" name="gender">Female
+                <input type="radio" value="Others" name="gender">Others<br>
+            </div>
+            <!-- Div for the queries portion of the form -->
+            <div class="queries">
+                <h3><b><u>Queries:</u></b></h3>
+                <b>1.How was your overall shopping experience on our website?</b><br>
+                <input type="radio" value="Excellent" name="myExperience">Excellent
+                <input type="radio" value="Good" name="myExperience">Good
+                <input type="radio" value="Poor" name="myExperience">Poor<br>
+                <br><b>2.Were you able to easily find products you were looking for?</b><br>
+                <input type="radio" value="Yes" name="productAccess">Yes
+                <input type="radio" value="No" name="productAccess">No<br>
+                <br><b>3.How was the delivery service?</b><br>
+                <input type="radio" value="Fast" name="deliveryService">Fast
+                <input type="radio" value="Average" name="deliveryService">Average
+                <input type="radio" value="Slow" name="deliveryService">Slow<br>
+                <br><b>Any additional suggestions for the improvement of our website?</b><br>
+                <br> <textarea name="Feedback" id="" rows="10" cols="30" placeholder="Please give your feedback here!"></textarea>
+                <br><input type="Submit" value="submit" name="submit">
+            </div>
+        </form>
+        <br><h4><b>Thank you for your valuable time to give us feedback!!</b></h4>
+    </div>
+    
+    <!-- JavaScript for the validation of the form -->
+    <script>
+        function validateForm(){
+            var fullName = document.forms["feedbackForm"]["full name"].value;
+            var phoneNumber = document.forms["feedbackForm"]["phone number"].value;
+            var emailAddress = document.forms["feedbackForm"]["email address"].value;
+            var gender = document.forms["feedbackForm"]["gender"].value;
+            var myExperience = document.forms["feedbackForm"]["myExperience"].value;
+            var productAccess= document.forms["feedbackForm"]["productAccess"].value;
+            var deliveryService = document.forms["feedbackForm"]["deliveryService"].value;
+            var feedback = document.forms["feedbackForm"]["Feedback"].value;
+            
+            if(fullName == "" || phoneNumber == "" || emailAddress == "" || gender == "" || myExperience == "" || productAccess == "" || deliveryService == "" || feedback == ""){
+                alert("Please fill out all required fields!");
+            }
+            else{
+                alert("Thank you for the feedback!");
+            }
+        }
+    </script>
+</body>
+</html>

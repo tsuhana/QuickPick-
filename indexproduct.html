@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet"  href="/css/index2.css">
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+        }
+        /* Style for the login popup */
+
+
+        .footer-col {
+            flex: 1; /* Make footer columns equal width */
+        }
+        
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+.product .container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.product .image-background{
+    width: 100%;
+    min-height: 400px;
+    background-image: url("image-product.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.h3 {
+    font-size: 38px;
+  }
+
+  .h1, .h2, .h3, p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+  }
+
+  p{
+    font-size: 32px;
+  }
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.category .cate1{
+    width: 100%;
+    padding: 10px 15px;
+    box-shadow: 0px 20px 40px 0px rgba(28, 51, 84, 0.1);
+}
+
+.image-cover{
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+}
+
+.cate1 h5{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+
+.products .container{
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    margin-inline: auto;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    color: black;
+}
+
+a:hover{
+    color: rgb(26, 183, 157);
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+.section.products{
+    padding-block: 5rem;
+  }
+  
+  .products  .container .section-title {
+    text-align: center;
+    margin-block-end: 32px;
+    width: 100%;
+    color: #141517;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.88px;
+  
+    
+  }
+  .products .grid-list {
+    display: grid;
+    gap: 32px;
+  }
+  .products .container .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  
+  .products .container .grid-list .blog-card {
+    position: relative;
+    background-color: #FFF;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0px 20px 40px 0px rgba(28, 51, 84, 0.1);
+  }
+  
+  .img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+  }
+  
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  
+  a, img, span, button, i {
+    display: block;
+  }
+  
+  .products  .container .grid-list .blog-card .card-content {
+    padding: 32px 24px;
+  }
+  
+  .products .h3 {
+    font-size: 22.4px;
+  }
+  
+  .products .h1, .h2, .h3, p {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .products .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 183, 157);
+    color: #FFF;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 4.8px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    line-height: 48px;
+    width: 129.6px;
+    padding: 0 16px;
+    gap: 16px;
+    font-weight: 400;
+    border: 1px solid rgb(26, 183, 157);
+    cursor: pointer;
+  }
+  
+  .products .add:hover{
+    background-color: rgb(27, 129, 112)
+  }
+  
+  .products .container .grid-list .blog-card .card-content .btn-blue {
+    border-radius: 4.8px;
+    background-color: #2abbe8;
+    border: 1px solid #2abbe8;
+  }
+  
+  .products .container .grid-list .blog-card .card-content .btn-blue:hover{
+    background-color: #057597;
+  }
+  
+  .products .product-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: "Raleway", sans-serif;
+      color: black;
+      margin-block-end: 10px;
+  }
+  
+  .products .product-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    color: black;
+    text-align: left;
+    margin-block-end: 10px;
+  }
+  
+  .products .price{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    color: red;
+    margin-block-end: 20px;
+  }
+  
+  .products .product-btn-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 20px; */
+  }
+
+  .products h5{
+    padding-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    opacity: 0.7;
+  }
+    </style>
+
+
+</head>
+<body>
+     <!--Header section-->
+    
+    <header class="header">
+
+        <a href="#" class="logo">QuickPick</a>
+
+        <nav class="navbar">
+            
+            <a href="/pages/index4.html">Home</a>
+            <a href="/pages/indexproduct.html">Product</a>
+            <a href="/pages/indexBlog.html">Blog</a>
+            <a href="/pages/indexaboutus.html">About us</a>
+            <a href="/pages/indexresearch.html">Research</a>
+
+
+
+
+
+
+
+        </nav>
+    </header>
+    
+
+    <!--Header section-->
+     <!--Banner section-->
+     <section class="home" id="home">
+        <div class="content">
+            <h3>" Fusion of instant  <span>freshness</span> quality and affordability "</h3>
+            <p>Say good bye to long grocery runs when you can have freshness at your door step
+                in just a few clicks!</p>
+
+                <a href="#" class="btn">SHOP NOW</a>
+        </div>
+
+
+    </section>
+
+
+    <!--Banner section-->
+
+    <!--Product-->
+    <section class="section product">
+        <div class="container">
+            
+            <h2 style="text-align: center; margin-bottom: 20px; ">Product Category</h2>
+            <div class="category">
+                <div class="cate1">
+                    <img src="/images/fruit.jpeg" alt="" class="image-cover">
+                    <h5>Fruit</h5>
+                </div>
+                <div class="cate1">
+                    <img src="/images/veggies.jpeg" alt="" class="image-cover">
+                    <h5>Veggies</h5>
+                </div>
+                <div class="cate1">
+                    <img src="/images/dairyproduct.jpeg" alt="" class="image-cover">
+                    <h5>dairy Product</h5>
+                </div>
+                <div class="cate1">
+                    <img src="/images/snacks.jpeg" alt="" class="image-cover">
+                    <h5>Snacks</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section products">
+        <div class="container">
+            <h2 class="h2 section-title">All Products</h2>
+            <ul class="grid-list">
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/spinach.webp" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                                Spinach
+                            </h3>
+                            <p class="product-description">Buy fresh spinach at affordable rate</p>
+                            <h4 class="price">RS 120</h4>
+                            <h5>Veggies</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/cauli.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Caulifllower
+                            </h3>
+                            <p class="product-description">Organic cauliflower from farm</p>
+                            <h4 class="price">RS 20</h4>
+                            <h5>Veggies</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/potato.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Potatoes
+                            </h3>
+                            <p class="product-description">Fresh potatoes at cheap price</p>
+                            <h4 class="price">RS 60</h4>
+                            <h5>Veggies</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/tomato.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Tomatoes
+                            </h3>
+                            <p class="product-description">Fresh tomatoes at cheap price</p>
+                            <h4 class="price">RS 80</h4>
+                            <h5>Veggies</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/apple.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                              Apple
+                            </h3>
+                            <p class="product-description">Organic apple from fresh farm</p>
+                            <h4 class="price">RS 200</h4>
+                            <h5>Fruit</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/gra[es.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                              Grapes
+                            </h3>
+                            <p class="product-description">Fresh grapes at discounted price (coupon available)</p>
+                            <h4 class="price">RS 100</h4>
+                            <h5>Fruit</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/mango.webp" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Mango
+                            </h3>
+                            <p class="product-description">Mangoes of Ratnagiri</p>
+                            <h4 class="price">RS 160</h4>
+                            <h5>Fruit</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/milk.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                                Milk
+                            </h3>
+                            <p class="product-description">Fresh and hygenic Milk straight from animal farm</p>
+                            <h4 class="price">RS 60</h4>
+                            <h5>Dairy</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/ghee.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                              Ghee
+                            </h3>
+                            <p class="product-description">Desi ghee at affordable rate</p>
+                            <h4 class="price">RS 1200</h4>
+                            <h5>Dairy</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/oil.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Oil
+                            </h3>
+                            <p class="product-description">Safola Gold Sunflower cooking oil</p>
+                            <h4 class="price">RS 60</h4>
+                            <h5>Dairy</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/ice-cream.jpg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Ice-cream
+                            </h3>
+                            <p class="product-description">Baskin Robins Ice cream</p>
+                            <h4 class="price">RS 50</h4>
+                            <h5>Dairy</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/lays.webp" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                              Lays
+                            </h3>
+                            <p class="product-description">All flavours of lays available</p>
+                            <h4 class="price">RS 100</h4>
+                            <h5>Snacks</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/biscutis.jpg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Biscuits
+                            </h3>
+                            <p class="product-description">Biscuits with no added sugar</p>
+                            <h4 class="price">RS 40</h4>
+                            <h5>Snacks</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/noodles.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Noodles
+                            </h3>
+                            <p class="product-description">Instant noodles </p>
+                            <h4 class="price">RS 180</h4>
+                            <h5>Snacks</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="blog-card">
+                        <figure class="card-banner img-holder" style="--width: 410; --height: 260">
+                            <img src="/images/coke.jpeg" width="410" height="260" loading="lazy" class="img-cover"
+                                alt="blog" />
+                        </figure>
+
+                        <div class="card-content">
+                            <h3 class="h3 product-title">
+                               Coke
+                            </h3>
+                            <p class="product-description">Cold drinks </p>
+                            <h4 class="price">RS 60</h4>
+                            <h5>Snacks</h5>
+                            <form method="post" action="" class="product-btn-form">
+                                <button type="submit" formaction="" class="btn add"><span class="span">Add to
+                                        Cart</span></button>
+
+                                <button type="submit" formaction="" class="btn btn-blue buy"><span class="span">Buy
+                                        Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+     <!--Footer-->
+
+
+
+     <footer>
+        <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+                <li><a href="#">Fruit</a></li>
+                <li><a href="#">Veggies</a></li>
+                <li><a href="#">Dairy product</a></li>
+                <li><a href="#">Snacks</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>
+
